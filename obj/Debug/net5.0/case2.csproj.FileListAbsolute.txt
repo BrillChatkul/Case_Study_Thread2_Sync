@@ -1,0 +1,16 @@
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\case2.exe
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\case2.deps.json
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\case2.runtimeconfig.json
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\case2.runtimeconfig.dev.json
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\case2.dll
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\ref\case2.dll
+E:\ProjectYears3\OS\case2\bin\Debug\net5.0\case2.pdb
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.csproj.AssemblyReference.cache
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.AssemblyInfoInputs.cache
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.AssemblyInfo.cs
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.csproj.CoreCompileInputs.cache
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.dll
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\ref\case2.dll
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.pdb
+E:\ProjectYears3\OS\case2\obj\Debug\net5.0\case2.genruntimeconfig.cache
