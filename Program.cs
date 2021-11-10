@@ -46,7 +46,7 @@ namespace OS_Problem_02
                         EnQueue(i);
                         i++;
                     }
-                    else if(Count >= 10 && flag1 == false)
+                    else if (Count >= 10 && flag1 == false)
                     {
                         flag1 = true;
                         Console.WriteLine("wait 1");
@@ -71,7 +71,7 @@ namespace OS_Problem_02
                         EnQueue(i);
                         i++;
                     }
-                    else if(Count >= 10 && flag2 == false)
+                    else if (Count >= 10 && flag2 == false)
                     {
                         flag2 = true;
                         Console.WriteLine("wait 1");
@@ -101,10 +101,15 @@ namespace OS_Problem_02
                     }
                     else
                     {
-                        Console.WriteLine("Sum = {0}, TrueSum = {1}", CheckSum, TrueSum);
-                        ConsoleKeyInfo name = Console.ReadKey();
-                        if(name.Key == ConsoleKey.Spacebar)
-                        Environment.Exit(0);
+                        if (Console.KeyAvailable)
+                        {
+                            Environment.Exit(0);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Wait to EnQueue || Sum : {0}, TrueSum : {1}", CheckSum, TrueSum);
+                            System.Threading.Thread.Sleep(3000);
+                        }
                     }
                     Thread.Sleep(100);
                 }
