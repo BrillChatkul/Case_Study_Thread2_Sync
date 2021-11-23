@@ -5,10 +5,10 @@ namespace OS_Problem_02
 {
     class Thread_safe_buffer
     {
-        static int[] TSBuffer = new int[10];
+        static int[] TSBuffer = new int[10]; 
         static int Front = 0;
         static int Back = 0;
-        static int Count = 0;
+        static int Count = 0; //////////// ระยุว่าบัฟเฟอร์เต็มรึยัง 
         static bool flag1 = false;
         static bool flag2 = false;
         static int CheckSum = 0;
@@ -32,18 +32,18 @@ namespace OS_Problem_02
             Count -= 1;
             return x;
         }
-
-        static void th01()
+                        
+        static void th01() 
         {
-            int i = 1;
-            while (i < 51)
+            int i = 1;     
+            while (i < 51) //0-50   
             {
-                lock (_Lock)
+                lock (_Lock)           
                 {
-                    if (Count < 10)
+                    if (Count < 10)  
                     {
                         TrueSum += i;
-                        EnQueue(i);
+                        EnQueue(i);    
                         i++;
                     }
                     else if (Count >= 10 && flag1 == false)
@@ -54,24 +54,23 @@ namespace OS_Problem_02
                     Thread.Sleep(5);
                 }
             }
-
         }
 
         static void th011()
         {
             int i = 100;
 
-            while (i < 151)
+            while (i < 151) //100 - 150
             {
                 lock (_Lock)
                 {
-                    if (Count < 10)
+                    if (Count < 10) 
                     {
                         TrueSum += i;
                         EnQueue(i);
                         i++;
                     }
-                    else if (Count >= 10 && flag2 == false)
+                    else if (Count >= 10 && flag2 == false) 
                     {
                         flag2 = true;
                         Console.WriteLine("wait 1");
@@ -86,7 +85,7 @@ namespace OS_Problem_02
             int i = 0;
             int j;
 
-            while (i < 60)
+            while (i < 60) 
             {
                 lock (_Lock)
                 {
